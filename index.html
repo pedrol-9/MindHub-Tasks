@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mdhl_1.css">
+    <link rel="shortcut icon" href="./assets/Logo-Mighty-ducks-01.png" type="image/x-icon">
     <style>
       body,
       html {
@@ -10,7 +12,7 @@
         padding: 0;
         height: 100%;
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
       aside {
         width: 25%;
@@ -22,7 +24,7 @@
       }
       .container {
         display: flex;
-        height: 100vh;
+        height: 100vh;  
       }
       img {
         width: 250px;
@@ -30,6 +32,7 @@
     </style>
     <title>Document</title>
   </head>
+
   <body>
     <header>
       <h1>Mighty Ducks Hockey League</h1>
@@ -43,37 +46,36 @@
 
     <main class="container">
       <aside>
-        <img
-          src="./assets/Logo-Mighty-ducks-01.png"
-          alt="Logotipo de la empresa Mighty Ducks Hockey League con un casco de hockey y dos palos de hockey cruzados."
-          width="150px"
-        />
-
-        <br />
-
-        <img
-          src="./assets/hockey-1.jpg"
-          alt="Jugador de hockey alegre con la mano en la cabeza."
-          width="150px"
-        />
+        <figure>
+          <img
+            src="./assets/Logo-Mighty-ducks-01.png"
+            alt="Logotipo de la empresa Mighty Ducks Hockey League con un casco de hockey y dos palos de hockey cruzados."
+          >
+        </figure>
+        <figure>
+          <img
+            src="./assets/hockey-1.jpg"
+            alt="Jugador de hockey alegre con la mano en la cabeza."
+          >          
+        </figure>
       </aside>
 
       <section>
         <h3>Upcoming Events</h3>
-        <div>
+        <article>
           <h4>August 4</h4>
           <p>MDSL Fundraiser</p>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <h4>August 16</h4>
           <p>Season Kick-off: Meet the Teams</p>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <h4>September 1</h4>
           <p>First Game of the Season (Check Game Schedule for details)</p>
-        </div>
+        </article>
       </section>
     </main>
   </body>
