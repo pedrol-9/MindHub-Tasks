@@ -1,0 +1,236 @@
+:root {
+  --color1: #ECF4D6;
+  --color2: #9AD0C2;
+  --color3: #2D9596;
+  --color4: #265073;
+}
+
+* {
+  margin: 0.5%;
+  padding: 1%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* height: 100; */
+  /* border: 1px solid white; */
+  box-sizing: border-box;
+  border: 1px solid wheat
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  min-height: 15vh;
+  /* border: 3px solid brown; */
+  background-color: var(--color1);
+  /* position: relative;   */
+  /* height:  */
+  padding: 1rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  display: block;
+  color: var(--color1);
+  background-color: var(--color4);
+  height: 85%;
+}
+
+nav {
+  position: absolute;
+  bottom: 0vh;
+  left: 20vw;
+  background-color: var(--color2);
+  /* text-align: center; */
+  height: 3rem;
+  display: inline-block;
+  margin-left: 2%;
+  width: 50%;
+  padding: 0.4em;
+  border-radius: 2em;
+  text-align: center;
+  z-index: 2;
+}
+
+nav a {
+  text-decoration: dotted;
+  color: var(--color4);
+  display: inline-block;
+  height: 2.0rem;
+  width: 28%;
+  font-size: 95%;
+  border-radius: 0.4rem;
+  margin: 0% 1.8%;
+  background-color: var(--color1);
+  text-align: center;
+  padding: 0.3em;
+}
+
+a[href="#"] {
+  background-color: var(--color4);
+  color: var(--color1);
+  border: 1px dotted var(--color1);
+}
+
+header figure img {
+  height: 95%;
+  width: 100%;
+  display: inline-block;
+  border: var(--color3);
+  border-radius: 15%;
+  object-fit: cover;
+  display: block;
+  padding-top: 2.5vh;
+}
+
+main {
+  /* position: absolute; */
+  background-color: var(--color1);
+  min-height: 47vh;
+  position: relative;
+  top: 27vh;
+}
+
+header figure {
+  background-color: var(--color4);
+  margin-top: 1vh;
+  position: absolute;
+  top: 12vh;
+  width: 96%;
+  height: 32vh;
+  z-index: 1;
+}
+
+main>aside,
+main>section {
+  display: inline-block;
+  margin-top: 2.25vh;
+}
+
+main>aside {
+  width: 25%;
+  height: 95%;
+  background-color: var(--color4);
+  vertical-align: top;
+  /* repasar qué hace este atributo */
+  margin-top: 2.25vh;
+}
+
+/* aside {
+  position: absolute;
+  top: 5em;
+} */
+
+main>section {
+  width: 72%;
+  padding: 0%;
+}
+
+main>aside>figure img {
+  max-width: 98%;
+  max-height: 98%;
+}
+
+#principal>h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--color1);
+  background-color: var(--color3);
+  /* position: absolute;
+  top: -2.5em;
+  left: 5em; */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+}
+
+.card1 {
+  width: 45%;
+  display: inline-block;
+  margin: 2%;
+  border: 2px dotted var(--color3)
+}
+
+.card2 {
+  width: 45%;
+  display: inline-block;
+  margin: 2%;
+  border: 2px dotted var(--color3)
+}
+
+.card3 {
+  width: 45%;
+  display: inline-block;
+  margin: 2%;
+  border: 2px dotted var(--color3)
+}
+
+.card-1 {
+  width: 100%;
+  margin: 0%;
+  border: 2px dotted var(--color3)
+}
+
+.card-2 {
+  width: 100%;
+  margin: 0%;
+  border: 2px dotted var(--color3)
+}
+
+.card-3 {
+  width: 100%;
+  margin: 0%;
+  border: 2px dotted var(--color3)
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p {
+  font-size: 98%;
+}
+
+h4 {
+  text-align: end;
+  color: var(--color1);
+  background-color: var(--color2);
+  font-family: "verdana";
+}
+
+#principal p {
+  text-align: end;
+  color: var(--color1);
+  background-color: var(--color3);
+  font-family: 'Trebuchet MS';
+}
+
+#principal div p {
+  text-align: end;
+  color: var(--color1);
+  background-color: var(--color3);
+  font-family: 'Trebuchet MS';
+  text-wrap: pre;
+}
+
+footer {
+  min-height: 7vh;
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 4em;
+  padding: 0.5em;
+  background-color: var(--color4);
+}
+
+footer p {
+  height: 80%;
+  padding: 0.8em;
+  background-color: var(--color3);
+  color: var(--color4);
+  border: 2px dotted var(--color1)
+}
