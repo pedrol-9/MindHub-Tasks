@@ -2,7 +2,7 @@
    --color1: #0F1035;
    --color2: #365486;
    --color3: #7FC7D9;
-   --color4: #DCF2F1;
+   --color4: #e0f1f0;
 }
 
 * {
@@ -54,7 +54,7 @@ header>nav {
 header>nav a {
    text-decoration: none;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 0.8rem;
+   font-size: 0.9rem;
    background-color: var(--color3);
    color: var(--color1);
    border-radius: 0.5rem;
@@ -85,34 +85,78 @@ header>figure>img {
    padding: 0.1rem;
 }
 
+header h2 {
+   /* rules of play page */
+   width: 100%;
+   text-align: center;
+   color: var(--color2);
+   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+header p {
+   /* rules of play page */
+   width: 100%;
+   color: var(--color1);
+   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+   margin-bottom: 1rem;
+}
+
 main {
    display: flex;
    /* flex-wrap: wrap; */
-   max-height: 52vh;
+   min-height: 52vh;
    width: 100%;
    /* height: auto; */
    background-color: var(--color4);
    margin-top: 1rem;
    margin-bottom: 0.3rem;
+   padding: 1rem;
 }
 
 main aside {
-   height: 50vh;
+   height: auto;
    background-color: var(--color1);
    max-width: 25%;
-   max-height: 98%;
+   min-height: 98%;
    /* display: flex; */
    /* flex-wrap: wrap; */
    border-radius: 0.5rem;
    margin-right: 0.5rem;
 }
 
+main aside h2 {
+   /* rules of play page */
+   width: 100%;
+   font-size: 1.2rem;
+   text-align: end;
+   color: var(--color1);
+   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+   border-radius: 0.5rem;
+   border: 1px dotted var(--color1);
+   padding: 0.6rem;
+}
+
+main aside p {
+   /* rules of play page */
+   width: 100%;
+   font-size: auto;
+   text-align: justify;
+   color: var(--color1);
+   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+   border-radius: 0.5rem;
+   border: 1px dotted var(--color1);
+   margin-top: 0.3rem;
+   padding: 0.6rem;
+}
+
 main aside figure {
+   /* home and about pages */
    height: 100%;
    background-color: var(--color1);
 }
 
 main aside img:nth-child(1) {
+   /* home and about pages */
    width: 100%;
    height: 47%;
    border-radius: 5%;
@@ -123,6 +167,7 @@ main aside img:nth-child(1) {
 }
 
 main aside img:nth-child(2) {
+   /* home and about pages */
    width: 100%;
    height: 35%;
    max-height: 20rem;
@@ -133,8 +178,9 @@ main aside img:nth-child(2) {
 }
 
 main section {
+   /* home and about pages */
    width: 100%;
-   max-height: 95%;
+   min-height: 95%;
    background-color: var(--color3);
    margin-top: 1rem;
    display: flex;
@@ -145,7 +191,19 @@ main section {
    align-content: start;
 }
 
+main section h2 {
+   /* rules of play page */
+   width: 100%;
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: var(--color3);
+   color: var(--color1);
+   border: 1px dotted var(--color1);
+   border-radius: 0.5rem;
+}
+
 main section h3 {
+   /* contact page */
    width: 100%;
    font-size: 1.5rem;
    padding: 0.5rem;
@@ -159,14 +217,17 @@ main section h3 {
 }
 
 main section article {
+   /* home and about pages */
    background-color: var(--color4);
-   /* min-height: 75%;
-   max-width: 30%; */
+   min-height: 83%;
+   /* max-width: 30%; */
    height: auto;
    width: 20vw;
+   border-radius: 0.5rem;
 }
 
 main section article h4 {
+   /* home and about pages */
    height: auto;
    width: 100%;
    max-height: 35%;
@@ -177,11 +238,98 @@ main section article h4 {
 }
 
 main section article p {
+   /* home and about pages */
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 0.8rem;
    height: auto;
    max-height: 60%;
    border: 1px dotted var(--color3);
+}
+
+#main-section p {
+   /* contact page */
+   width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* text-align: justify;   */
+   height: auto;
+   border-radius: 0.5rem;
+   background-color: var(--color4);
+}
+
+#main-section p>a {
+   /* contact page */
+   padding: 0;
+}
+
+span {
+   /* contact page */
+   padding: 0;
+}
+
+ol {
+   /* rules of play page */
+   border-radius: 0.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   /* flex-direction: row-reverse; */
+
+}
+
+li,
+ol,
+ul,
+dl,
+dt,
+dd {
+   /* rules of play page */
+   list-style-position: inside;
+   border-radius: 0.5rem;
+   border: 1px dotted var(--color3);
+   margin: 0.2rem;
+   /* display: flex; */
+}
+
+main section ol li h3 {
+   /* rules of play page */
+   font-size: 1rem;
+   padding: 0.3rem;
+   height: auto;
+}
+
+main section ol li p {
+   /* rules of play page */
+   border: 1px dotted var(--color1);
+   border-radius: 0.5rem;
+   margin-top: 0.3rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main section ol li ol li {
+   /* rules of play page */
+   border: 1px dotted var(--color1);
+   border-radius: 0.5rem;
+   margin-top: 0.3rem;
+   width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li::marker {
+   /* rules of play page */
+   font-size: 1.3rem;
+   position: absolute;
+   color: var(--color1);
+   font-style: italic;
+}
+
+main section dt {
+   /* rules of play page */
+   background-color: var(--color1);
+   color: var(--color4);
+   font-family: Geneva, Verdana, sans-serif;
+   font-weight: bold;
+   text-align: center;
+   padding: 0.3rem;
+   height: auto;
 }
 
 footer {
@@ -190,6 +338,7 @@ footer {
    margin-top: 5rem;
    width: 100%;
    margin-bottom: 0;
+   border-radius: 0.5rem;
 }
 
 footer p {
@@ -198,4 +347,5 @@ footer p {
    /* margin-top: 5rem;
    width: 100% */
    text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
