@@ -55,17 +55,19 @@ header>nav {
 header>nav a {
    text-decoration: none;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 0.9rem;
+   /* font-size: 1rem; */
    background-color: var(--color3);
    color: var(--color1);
    border-radius: 0.5rem;
 }
+
 
 a[href="#"] {
    background-color: var(--color1);
    color: var(--color4);
    border: 1px dotted var(--color4);
    border-radius: 0.5rem;
+
 }
 
 header figure {
@@ -86,17 +88,24 @@ header>figure>img {
    padding: 0.1rem;
 }
 
+header>figure>img:hover {
+   transform: rotate(1deg);
+   opacity: 0.8;
+   border: 2px dotted var(--color3);
+}
+
 header h2 {
    /* rules of play page */
    width: 100%;
    text-align: center;
-   color: var(--color2);
+   color: var(--color1);
    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
 
 header p {
    /* rules of play page */
    width: 100%;
+   text-align: center;
    color: var(--color1);
    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
    margin-bottom: 1rem;
@@ -227,6 +236,11 @@ main section article {
    border-radius: 0.5rem;
 }
 
+article:hover {
+   box-shadow: 2px 2px 4px var(--color1);
+   font-size: 1.2rem;
+}
+
 main section article h4 {
    /* home and about pages */
    height: auto;
@@ -322,6 +336,12 @@ li::marker {
    font-style: italic;
 }
 
+li:hover,
+dl:hover {
+   transform: rotate(1deg);
+   box-shadow: 2px 2px 4px var(--color1);
+}
+
 main section dt {
    /* rules of play page */
    background-color: var(--color1);
@@ -385,6 +405,12 @@ table tr {
    /* PROBLEMASSSSSS */
    background-color: var(--color3);
    display: table-row;
+}
+
+table:hover {
+   transform: rotate(1deg);
+   box-shadow: 2px 2px 4px var(--color1);
+
 }
 
 footer {
