@@ -203,13 +203,14 @@ main section {
 
 main section h2 {
    /* rules of play page */
-   width: 100%;
+   width: 90%;
    text-align: center;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    background-color: var(--color3);
    color: var(--color1);
-   border: 1px dotted var(--color1);
+   align-self: start;
    border-radius: 0.5rem;
+   text-shadow: 1px 1px 3px var(--color4);
 }
 
 main section h3 {
@@ -224,6 +225,23 @@ main section h3 {
    color: var(--color4);
    font-family: Geneva, Verdana, sans-serif;
    border-radius: 0.5rem;
+}
+
+main section p>a {
+   /* contact page */
+   text-decoration: none;
+   color: var(--color2);
+   font-weight: bold;
+}
+
+#p-text {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   height: auto;
+   background-color: var(--color3);
+   font-weight: bold;
+   color: var(--color4);
+
+   text-shadow: 1px 1px 2px #365486;
 }
 
 main section article {
@@ -363,7 +381,7 @@ main aside div h4 {
    border-radius: 0.5rem;
 }
 
-main aside div p a {
+main aside div p>a {
    /* games schedule */
    display: inline-block;
    width: 98%;
@@ -371,8 +389,10 @@ main aside div p a {
    /* white-space: nowrap; */
    overflow: hidden;
    text-overflow: ellipsis;
-   text-decoration: none;
    padding: 0;
+   text-decoration: none;
+   color: var(--color2);
+   font-weight: bold;
 }
 
 #games-table {
@@ -380,7 +400,7 @@ main aside div p a {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   align-content: center;
+   align-content: space-around;
 }
 
 main section table {
@@ -404,7 +424,7 @@ table tr {
    /* games schedule */
    /* PROBLEMASSSSSS */
    background-color: var(--color3);
-   display: table-row;
+   border: 3px solid var(--color1);
 }
 
 table:hover {
