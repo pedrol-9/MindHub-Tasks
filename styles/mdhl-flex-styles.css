@@ -48,7 +48,8 @@ header>nav {
    right: 2rem;
    background-color: var(--color4);
    border-radius: 0.5rem;
-   max-width: 62%;
+   /* max-width: 62%; */
+   width: auto;
 }
 
 header>nav a {
@@ -330,6 +331,60 @@ main section dt {
    text-align: center;
    padding: 0.3rem;
    height: auto;
+}
+
+main aside div {
+   /* games schedule */
+   background-color: var(--color1);
+}
+
+main aside div h4 {
+   /* games schedule */
+   border-radius: 0.5rem;
+}
+
+main aside div p a {
+   /* games schedule */
+   display: inline-block;
+   width: 98%;
+   /* font-size: 0.7rem; */
+   /* white-space: nowrap; */
+   overflow: hidden;
+   text-overflow: ellipsis;
+   text-decoration: none;
+   padding: 0;
+}
+
+#games-table {
+   /* main section de: games schedule */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+main section table {
+   /* games schedule */
+   /* display: inline-block; */
+   min-width: 50vw;
+   height: auto;
+   font-family: Geneva, Verdana, sans-serif;
+   /* font-size: auto; */
+   text-align: end;
+   border-collapse: collapse;
+}
+
+th {
+   /* games schedule */
+   background-color: var(--color1);
+   color: var(--color4);
+}
+
+table tr {
+   /* games schedule */
+   /* PROBLEMASSSSSS */
+   background-color: var(--color3);
+   display: table-row;
 }
 
 footer {
