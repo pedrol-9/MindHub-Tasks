@@ -10,6 +10,9 @@
    padding: 0.5rem;
    box-sizing: border-box;
    /* border: 1px solid brown; */
+}
+
+body {
    background-color: var(--color4);
 }
 
@@ -41,7 +44,7 @@ header>h1 {
 header>nav {
    justify-content: end;
    justify-items: auto;
-   font-size: 0.8em;
+   font-size: 1em;
    padding: 0.6rem;
    position: absolute;
    bottom: -1.7rem;
@@ -55,19 +58,16 @@ header>nav {
 header>nav a {
    text-decoration: none;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   /* font-size: 1rem; */
    background-color: var(--color3);
    color: var(--color1);
    border-radius: 0.5rem;
 }
-
 
 a[href="#"] {
    background-color: var(--color1);
    color: var(--color4);
    border: 1px dotted var(--color4);
    border-radius: 0.5rem;
-
 }
 
 header figure {
@@ -113,10 +113,9 @@ header p {
 
 main {
    display: flex;
-   /* flex-wrap: wrap; */
+   flex-wrap: wrap;
    min-height: 52vh;
-   width: 100%;
-   /* height: auto; */
+   /* min-width: 70%; */
    background-color: var(--color4);
    margin-top: 1rem;
    margin-bottom: 0.3rem;
@@ -144,19 +143,20 @@ main aside h2 {
    border-radius: 0.5rem;
    border: 1px dotted var(--color1);
    padding: 0.6rem;
+   background-color: var(--color4);
 }
 
 main aside p {
    /* rules of play page */
    width: 100%;
-   font-size: auto;
    text-align: justify;
    color: var(--color1);
-   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
    border-radius: 0.5rem;
    border: 1px dotted var(--color1);
    margin-top: 0.3rem;
    padding: 0.6rem;
+   background-color: var(--color4);
 }
 
 main aside figure {
@@ -168,28 +168,28 @@ main aside figure {
 main aside img:nth-child(1) {
    /* home and about pages */
    width: 100%;
-   height: 47%;
+   /* height: 47%; */
    border-radius: 5%;
    padding: 0.3rem;
    /* display: inline-block; */
-   object-fit: cover;
+   /* object-fit: cover; */
    background-color: var(--color1);
 }
 
 main aside img:nth-child(2) {
    /* home and about pages */
    width: 100%;
-   height: 35%;
-   max-height: 20rem;
+   /* height: 35%; */
+   /* max-height: 20rem; */
    border-radius: 5%;
    padding: 0.3rem;
-   object-fit: cover;
+   /* object-fit: cover; */
    background-color: var(--color1);
 }
 
 main section {
    /* home and about pages */
-   width: 100%;
+   width: 72%;
    min-height: 95%;
    background-color: var(--color3);
    margin-top: 1rem;
@@ -234,6 +234,11 @@ main section p>a {
    font-weight: bold;
 }
 
+main section p {
+   width: 100%;
+   text-align: center;
+}
+
 #p-text {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    height: auto;
@@ -247,7 +252,7 @@ main section p>a {
 main section article {
    /* home and about pages */
    background-color: var(--color4);
-   min-height: 83%;
+   min-height: 70%;
    /* max-width: 30%; */
    height: auto;
    width: 20vw;
@@ -279,7 +284,7 @@ main section article p {
    border: 1px dotted var(--color3);
 }
 
-#main-section p {
+#contact-main-section p {
    /* contact page */
    width: 100%;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -289,7 +294,7 @@ main section article p {
    background-color: var(--color4);
 }
 
-#main-section p>a {
+#contact-main-section p>a {
    /* contact page */
    padding: 0;
 }
@@ -320,6 +325,8 @@ dd {
    border: 1px dotted var(--color3);
    margin: 0.2rem;
    /* display: flex; */
+   background-color: var(--color4);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main section ol li h3 {
@@ -334,7 +341,6 @@ main section ol li p {
    border: 1px dotted var(--color1);
    border-radius: 0.5rem;
    margin-top: 0.3rem;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main section ol li ol li {
@@ -343,7 +349,6 @@ main section ol li ol li {
    border-radius: 0.5rem;
    margin-top: 0.3rem;
    width: 100%;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li::marker {
@@ -373,7 +378,10 @@ main section dt {
 
 main aside div {
    /* games schedule */
-   background-color: var(--color1);
+   background-color: var(--color4);
+   font-family: Geneva, Verdana, sans-serif;
+   border-radius: 0.5rem;
+   margin: 0.5rem;
 }
 
 main aside div h4 {
@@ -396,7 +404,7 @@ main aside div p>a {
 }
 
 #games-table {
-   /* main section de: games schedule */
+   /* main section de: games schedule page */
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -412,6 +420,7 @@ main section table {
    /* font-size: auto; */
    text-align: end;
    border-collapse: collapse;
+
 }
 
 th {
@@ -423,7 +432,7 @@ th {
 table tr {
    /* games schedule */
    /* PROBLEMASSSSSS */
-   background-color: var(--color3);
+   background-color: var(--color4);
    border: 3px solid var(--color1);
 }
 
@@ -432,6 +441,8 @@ table:hover {
    box-shadow: 2px 2px 4px var(--color1);
 
 }
+
+/* FOOTER PARA TODAS LAS PAGINAS */
 
 footer {
    background-color: var(--color1);
@@ -449,4 +460,110 @@ footer p {
    width: 100% */
    text-align: center;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ***STYLES APPLIED TO REGISTRATION FORM*** */
+
+section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+form {
+   width: 80%;
+   border: 6px double var(--color1);
+   border-radius: 0.5rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: var(--color3);
+   /* outline: 1px solid yellow; */
+
+}
+
+form fieldset {
+   background-color: var(--color4);
+   margin-top: 0.6rem;
+   padding: 2rem;
+   /* outline: 1px solid red; */
+}
+
+fieldset legend {
+   background-color: var(--color4);
+   height: auto;
+   border-radius: 0.5rem;
+   color: var(--color2);
+   font-weight: bold;
+   /* outline: 1px solid yellow; */
+}
+
+fieldset:hover {
+   box-shadow: 2px 2px 4px var(--color1);
+}
+
+main section form h3 {
+   height: auto;
+   font-size: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 0.5rem;
+   /* outline: 1px solid yellow; */
+}
+
+input {
+   margin: 0.5rem;
+}
+
+label:hover {
+   font-style: italic;
+   font-weight: bold;
+}
+
+.fieldset-styles input {
+   width: 100%;
+   margin: 0.5rem;
+   text-align: center;
+   margin-right: 0.5rem;
+}
+
+.fieldset-styles input:hover {
+   box-shadow: 1px 1px 2px var(--color1);
+}
+
+.fieldset-styles2 label {
+   display: inline-block;
+   width: auto;
+}
+
+fieldset select {
+   width: 20vw;
+   margin-left: 1rem;
+   font-size: 1rem;
+}
+
+.fieldset-styles3>input {
+   width: 20vw;
+   margin-left: 1rem;
+   font-size: 1rem;
+}
+
+#register-main-section {
+   width: 100%;
+   outline: 2px solid brown;
+}
+
+#register-main-section article {
+   width: 100%;
+   margin-top: 0.5rem;
+}
+
+button {
+   width: 20vw;
+   border-radius: 1px dotted var(--color4);
+   /* position: absolute; */
+   border-radius: 0.5rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   margin-left: 35%;
+   font-weight: bold;
+   color: var(--color2);
 }
