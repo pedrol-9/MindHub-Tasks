@@ -420,7 +420,6 @@ main section table {
    /* font-size: auto; */
    text-align: end;
    border-collapse: collapse;
-
 }
 
 th {
@@ -428,6 +427,14 @@ th {
    background-color: var(--color1);
    color: var(--color4);
 }
+
+/* ***estilos para los mapas*** */
+iframe {
+   width: 20vw;
+   height: 20vh;
+   box-shadow: 1px 1px 2px #0F1035;
+}
+
 
 table tr {
    /* games schedule */
