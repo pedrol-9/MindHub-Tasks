@@ -38,22 +38,8 @@
             <input type="text" name="player-fname" id="player-fname"
               placeholder="Tom J. (with full mid-name or initial)">
           </label>
-          <input type="text" name="player-lname" id="player-lname" placeholder="Last Name">
-        </fieldset>
-
-        <fieldset lang="en" class="fieldset-styles">
-          <legend>Guardian of the minor registrant</legend>
-          <label>Parent Full-name
-            <input type="text" name="parent-name" id="parent-name" placeholder="type down parent full-name">
-          </label>
-
-          <label>Parent Telephone
-            <input type="tel" name="parent-telephone" id="parent-telephone" placeholder="123-456-7890"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          </label>
-
-          <label>Parent email
-            <input type="email" name="parent-email" id="parent-email" placeholder="sample@email.com">
+          <label>Player Last Name:
+            <input type="text" name="player-lname" id="player-lname" placeholder="Last Name">
           </label>
         </fieldset>
 
@@ -89,16 +75,13 @@
             <input type="radio" name="gender" id="female" value="female">
             Female:
           </label>
-
-          <label>
-            <input type="radio" name="gender" id="others" value="others">
-            Others:
-          </label>
         </fieldset>
 
         <fieldset class="fieldset-styles2">
           <legend>Grade</legend>
-          <h4>Pre-school:</h4>
+          <label>Grade
+            <input type="checkbox" name="grade" id="grade" value="elementary-grade">
+          </label>
 
           <label>
             <input type="radio" name="grade" id="first-grade" value="first-grade">
@@ -191,6 +174,14 @@
             rules and policies as well as the cancellation policy and agree
             to all of their terms.
           </p>
+
+          <label style="width: 100%; display: inline-block;">Parent-Guardian Signature:
+            <input style="width: 35vw;" type="text" name="parent-guardian-signature" id="parent-guardian-signature">
+          </label>
+          <label style="width: 100%; display: inline-block;">Date of submit:
+            <input type="date" name="date-of-sumit" id="date-of-sumit" style="width: 23%; font-size: 1rem;">
+          </label>
+
           <button>SUBMIT</button>
         </article>
       </form>
