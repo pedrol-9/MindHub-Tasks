@@ -49,12 +49,11 @@
 
           <label>Parent Telephone
             <input type="tel" name="parent-telephone" id="parent-telephone" placeholder="123-456-7890"
-              pattern="[0-9](3) [0-9](3) [0-9](4)">
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
           </label>
 
           <label>Parent email
-            <input type="email" name="parent-email" id="parent-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              placeholder="sample@email.com">
+            <input type="email" name="parent-email" id="parent-email" placeholder=" sample@email.com">
           </label>
         </fieldset>
 
@@ -82,17 +81,17 @@
         <fieldset class="fieldset-styles2">
           <legend>Gender</legend>
           <label>
-            <input type="radio" name="male" id="male" value="male">
+            <input type="radio" name="gender" id="male" value="male">
             Male:
           </label>
 
           <label>
-            <input type="radio" name="female" id="female" value="female">
+            <input type="radio" name="gender" id="female" value="female">
             Female:
           </label>
 
           <label>
-            <input type="radio" name="others" id="others" value="others">
+            <input type="radio" name="gender" id="others" value="others">
             Others:
           </label>
         </fieldset>
@@ -146,19 +145,19 @@
         <fieldset class="fieldset-styles2">
           <legend>(Check all that apply)</legend>
           <label>
-            <input type="checkbox" name="forward" id="forward">
+            <input type="checkbox" name="play-position" id="forward" value="forward">
             Forward
           </label>
           <label>
-            <input type="checkbox" name="defense" id="defense">
+            <input type="checkbox" name="play-position" id="defense" value="defense">
             Defense
           </label>
           <label>
-            <input type="checkbox" name="midfield" id="midfield">
+            <input type="checkbox" name="play-position" id="midfield" value="midfield">
             Midfield
           </label>
           <label>
-            <input type="checkbox" name="goalkeeper" id="goalkeeper">
+            <input type="checkbox" name="play-position" id="goalkeeper" value="goalkeeper">
             Goalkeeper
           </label>
         </fieldset>
